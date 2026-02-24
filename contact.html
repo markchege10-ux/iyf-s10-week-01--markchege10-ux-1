@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial scale="1.0">
+    <title>Application for jobs</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Application for jobs</legend>
+
+            <p>
+                <label for="Full name">Full name</label> <input type="Full name"><br>
+                <label for="Email">Email</label> <input type="Email"><br>
+                <label for="Phone number">Phone number</label> <input type="Phone number"><br>
+                <label for="Subject-choice">Subject:</label>
+                <select id="subject-choice" name="subject" required>
+                    <option value=""disabled selected>--- Please choose an option ---</option>
+                    <option value="inquiry">General inquiry</option>
+                    <option value="support">Technical support</option>
+                    <option value="feedback">Feedback</option>
+                    </select><br>
+                     <label for="Message">Message</label><br>
+                     <textarea
+                     id="user-message"
+                     name="message"
+                     rows="5"
+                     placeholder="This is a text message to inform all of the applicants you are
+                     required to apply before the deadline. Make sure you include all you details 
+                     and the details should be well indicated with no errors or you will be disqualified.
+                     Once you apply you will receive an email which will include the interview dates.
+                     I wish you all the best."
+                     minlength="60"
+                     required></textarea><br>
+                     <label for="Newsletter subscription">Newsletter subscription</label> <input type="Newsletter subscription"><br>
+                     <button type="submit">submit</button>
+
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
